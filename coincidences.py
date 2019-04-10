@@ -113,7 +113,8 @@ class Coincify(icetray.I3ConditionalModule):
         
 class NewCoincidences(icetray.I3ConditionalModule):
     """
-    Apply a local coincidence condition to pulses
+    Apply a local coincidence condition to pulses. Separates between intra and intercoincidences
+    ####TODO: Mask pulses instead of creating new ones 
     """
     def __init__(self, ctx):
         super(NewCoincidences,self).__init__(ctx)
